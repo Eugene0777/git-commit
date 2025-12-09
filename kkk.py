@@ -3,7 +3,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s: %(message)s")
 
-TWEETS_FILE = "all_tweets_min.json"
+TWEETS_FILES = "all_tweets_min.json"
 LEADERBOARD_FILE = "leaderboard.json"
 
 
@@ -56,3 +56,4 @@ if __name__ == "__main__":
     save_leaderboard(leaderboard)
 
     logging.info(f"🏆 Leaderboard построен: {len(leaderboard)} пользователей.")
+
